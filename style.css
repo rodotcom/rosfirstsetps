@@ -1,0 +1,99 @@
+/* Estilos generales */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilos para el header */
+header.main-head {
+    background-color: #be9fd8;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.main-head img {
+    max-height: 200px; /* Limita la altura máxima de la imagen */
+}
+
+/* Estilos para la lista de navegación */
+nav ul.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul.list li {
+    margin-left: 20px; /* Espacio entre elementos del menú */
+}
+
+nav ul.list li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul.list li a:hover {
+    background-color: #6f20af;
+    padding: 5px;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alinear imágenes al lado del texto */
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.service div {
+    max-width: 55%; /* Texto ocupa un 55% del espacio */
+}
+
+.service img {
+    max-width: 40%; /* Imagen ocupa un 40% del espacio */
+    max-height: 200px; /* Limita la altura máxima de la imagen */
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+/* Para dispositivos móviles, reorganiza en columna */
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service img {
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .service div {
+        max-width: 100%;
+    }
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
